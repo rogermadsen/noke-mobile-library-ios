@@ -13,5 +13,5 @@ let package = Package(
         .target(
             name: "NokeMobileLibrary",
             path: "NokeMobileLibrary")
-    ]
+    ],
     swiftLanguageVersions: [.v5])
