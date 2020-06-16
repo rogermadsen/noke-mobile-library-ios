@@ -7,7 +7,7 @@
 //
 
 #if SWIFT_PACKAGE
-import NokeMobileLibraryC
+#import NokeMobileLibraryC
 #endif
 
 import Foundation
