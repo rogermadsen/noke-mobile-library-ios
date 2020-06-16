@@ -7,11 +7,19 @@ let package = Package(
     products: [
         .library(
             name: "NokeMobileLibrary",
-            targets: ["NokeMobileLibrary"])
+            targets: ["NokeMobileLibraryC", "NokeMobileLibrary"])
+    ],
+    dependencies: [
     ],
     targets: [
         .target(
+            name: "NokeMobileLibraryC",
+            dependencies: [],
+            path: "NokeMobileLibrary/C"
+        ),
+        .target(
             name: "NokeMobileLibrary",
-            path: "NokeMobileLibrary")
+            dependencies: ["NokeMobileLibraryC"],
+            path: "NokeMobileLibrary/Classes")
     ],
     swiftLanguageVersions: [.v5])
