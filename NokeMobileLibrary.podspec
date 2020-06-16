@@ -21,6 +21,8 @@ The Nokē Mobile Library provides an easy-to-use and stable way to communicate w
   s.source           = { :git => 'https://github.com/noke-inc/noke-mobile-library-ios.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/nokelocks'
 
+  s.module_map = 'NokeMobileLibrary/module.modulemap'
+
   s.swift_version = '5.0'
 
   s.ios.deployment_target = '8.0'
